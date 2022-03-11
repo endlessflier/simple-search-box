@@ -1,25 +1,36 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.searchBox input {
+  font-size: 12px;
+  width: 400px;
+  display: flex;
+  padding: 5px;
+  border: 1px solid black;
+  justify-content: space-between;
 }
 .listbox {
-  border: 2px solid black;
-  width: 51%;
-}
-.textbox {
+  width: 100%;
   display: flex;
-  width: 50%;
-  font-size: 18px;
-  padding: 5px;
-  border: 1px solid #ddd;
+  flex-direction: column;
 }
 .filterList {
-  display: flex;
   padding: 5px;
-  text-decoration: none;
-  color: black;
-  border: 1px solid #ddd;
-  display: block;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
 }
 .filterList:hover {
   color: white;
